@@ -1,0 +1,21 @@
+database_uri: 'postgresql://admin:admin@postgres:5432/monitoring_db'
+
+trained_models:
+  - artifacts
+  - results
+
+saved_classes:
+  - data
+  - classes.npy
+
+model_name: 'roberta-base'
+experiment: '2023-08-20 20:28:13'
+checkpoint: 'checkpoint-1905'
+
+reports:
+  reference_data:
+    - data
+    - train.parquet
+  text_feature: narrative
+  target: product
+  prediction: product_prediction

@@ -1,0 +1,14 @@
+path_data:
+  - data
+
+raw_data: 'complaints_processed.csv'
+train_data: 'train.parquet'
+validation_data: 'valid.parquet'
+test_data: 'test.parquet'
+save_classes: 'classes.npy'
+
+split_ratio: 0.25
+
+text_feature: 'narrative'
+target_feature: 'product'
+sample_frac: 0.5

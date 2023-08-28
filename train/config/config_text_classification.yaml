@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - preprocess: preprocess
+  - model: model
+  - train: train
+
+seed: 2023
+experiment_name: # could be used to resume from checkpoint
+artifacts:
+  - artifacts
+log_dir:
+  - logs
+results:
+  - results
+model_lifecycle:
+  - mlflow
+
+# change default log directory for hydra
+hydra:
+  run:
+    dir: ./artifacts/hydra/${now:%Y-%m-%d}/${now:%H-%M-%S}

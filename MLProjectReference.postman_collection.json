@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "3907c890-d4fa-4985-bf83-5d3b9366a08e",
+		"name": "MLProjectReference",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17299333",
+		"_collection_link": "https://cloudy-firefly-268156.postman.co/workspace/Team-Workspace~85c0a964-85fe-4a8b-8531-c8759ecea089/collection/17299333-3907c890-d4fa-4985-bf83-5d3b9366a08e?action=share&source=collection_link&creator=17299333"
+	},
+	"item": [
+		{
+			"name": "inference",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": \"ee6c5d8b-f8d9-402d-b5e2-4a79f7238654\",\n    \"narrative\": \"reviewing credit history noticed account knowledge believe identity tampered authorize account inquired way said would like matter resolved removed immediately credit_reporting\",\n    \"product\": \"credit_reporting\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/crayon/inference",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"crayon",
+						"inference"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "replace_model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model_name\": \"albert-base-v1\",\n    \"experiment\": \"2023-08-20 21:06:40\",\n    \"checkpoint\": \"checkpoint-3810\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/crayon/replace-model",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"crayon",
+						"replace-model"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
